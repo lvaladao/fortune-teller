@@ -4,10 +4,9 @@ Rails.application.routes.draw do
 
   get("/lottery/lucky", { :controller => "numbers", :action => "winners" })
   get("/", { :controller => "numbers", :action => "winners" })
+  get("/lottery/unlucky", { :controller => "numbers", :action => "losers" })
 
   # Let users visit URLs:
-
-  # - /lottery/unlucky
 
   # PART 2: R→C→A→V DEBUGGING
   # ======================
